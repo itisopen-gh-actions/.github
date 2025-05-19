@@ -1,7 +1,7 @@
 
 shared:
   automated_prs: &automated_prs
-    - "author=cloudpossebot"
+    - "author=itisopenbot"
     - "author=github-actions[bot]"
     - "author=dependabot[bot]"
     - "author=renovate[bot]"

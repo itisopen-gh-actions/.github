@@ -3,7 +3,7 @@ name: Release Branch
 on:
   push:
     branches:
-      - main
+      - itisopen
       - release/**
     # This .github organization is a special case for the release branch
     # We want to cut releases when github reusable/shared workflows change.
@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   readme:
-    uses: cloudposse-github-actions/.github/.github/workflows/shared-readme.yml@main
+    uses: itisopen-gh-actions/.github/.github/workflows/shared-readme.yml@itisopen
     name: "ci"
     with:
       runs-on: '["ubuntu-latest"]'
@@ -33,7 +33,7 @@ jobs:
   release:
     needs: [ readme ]
     name: "ci"
-    uses: cloudposse-github-actions/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen-gh-actions/.github/.github/workflows/shared-auto-release.yml@itisopen
     with:
       publish: ${{ inputs.publish }}
     secrets: inherit

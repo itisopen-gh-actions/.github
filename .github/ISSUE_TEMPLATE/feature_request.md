@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-Have a question? Please checkout our [Slack Community](https://slack.cloudposse.com) or visit our [Slack Archive](https://archive.sweetops.com/). 
+Have a question? Please checkout our [Slack Community](https://slack.itisopen.net) or visit our [Slack Archive](https://archive.itisopen.net/). 
 
-[![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+[![Slack Community](https://slack.itisopen.net/badge.svg)](https://slack.itisopen.net)
 
 ## Describe the Feature
 

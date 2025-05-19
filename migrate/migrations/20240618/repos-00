@@ -1,4 +1,4 @@
-cloudposse-github-actions/test-action
-cloudposse-github-actions/typescript-template
-cloudposse-github-actions/string-transformer
-cloudposse-github-actions/composite-template
+itisopen-gh-actions/test-action
+itisopen-gh-actions/typescript-template
+itisopen-gh-actions/string-transformer
+itisopen-gh-actions/composite-template

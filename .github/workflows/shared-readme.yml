@@ -16,7 +16,7 @@ name: |-
       
     jobs:
       ci-readme:
-        uses: cloudposse/github-actions-workflows/.github/workflows/ci-readme.yml@main
+        uses: itisopen/github-actions-workflows/.github/workflows/ci-readme.yml@itisopen
         with:
           suggestions: true
           filter-mode: diff_context
@@ -60,7 +60,7 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.github-app.outputs.token }}
 
-      - uses: cloudposse-github-actions/readme@v0
+      - uses: itisopen-gh-actions/readme@v0.5.0
         with:
           token: ${{ steps.github-app.outputs.token }}
           readme_enabled: true

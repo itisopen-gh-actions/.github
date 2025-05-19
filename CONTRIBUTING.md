@@ -1,16 +1,16 @@
 # Contributing
 
-First off, thank you for considering contributing to Cloud Posse! It's people like you that make our community great.
+First off, thank you for considering contributing to ITisOpen! It's people like you that make our community great.
 
 ## Code of Conduct
 
-Cloud Posse has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+ITisOpen has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## What Should I Know Before I Get Started?
 
-### Cloud Posse Projects
+### ITisOpen Projects
 
-Each Cloud Posse project is hosted in its own repository on GitHub. Before contributing, familiarize yourself with the specific project you are interested in. Each repository typically contains a [`README.md`](README.md) with an overview of the project, and instructions for setting up your development environment and running tests.
+Each ITisOpen project is hosted in its own repository on GitHub. Before contributing, familiarize yourself with the specific project you are interested in. Each repository typically contains a [`README.md`](README.md) with an overview of the project, and instructions for setting up your development environment and running tests.
 
 ## How Can I Contribute?
 
@@ -22,11 +22,11 @@ Before creating bug reports, please check the Github Issues as you might find ou
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for Cloud Posse, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for ITisOpen, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to Cloud Posse? You can start by looking through issues with the following labels:
+Unsure where to begin contributing to ITisOpen? You can start by looking through issues with the following labels:
 
 | Label                                                              | Usage   |                                                         
 |:-------------------------------------------------------------------|:--------|
@@ -37,10 +37,10 @@ Unsure where to begin contributing to Cloud Posse? You can start by looking thro
 
 The process described here has several goals:
 
-- Maintain Cloud Posse's quality
+- Maintain ITisOpen's quality
 - Fix problems that are important to users
-- Engage the community in working toward the best possible Cloud Posse
-- Enable a sustainable system for Cloud Posse's maintainers to review contributions
+- Engage the community in working toward the best possible ITisOpen
+- Enable a sustainable system for ITisOpen's maintainers to review contributions
 
 Please follow these steps to have your contribution considered by the maintainers:
 

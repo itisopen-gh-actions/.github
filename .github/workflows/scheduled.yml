@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   readme:
-    uses: cloudposse-github-actions/.github/.github/workflows/shared-readme.yml@main
+    uses: itisopen-gh-actions/.github/.github/workflows/shared-readme.yml@itisopen
     name: "readme"
     with:
       runs-on: '["ubuntu-latest"]'
@@ -22,7 +22,7 @@ jobs:
     environment: security
     steps:
       - name: Run organizational action
-        uses: cloudposse-github-actions/.github@v0
+        uses: itisopen-gh-actions/.github@v0.4.0
         with:
           github_app_id: ${{ vars.GH_APP_ID }}
           github_app_private_key: ${{ secrets.GH_APP_PRIVATE_KEY }}

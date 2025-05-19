@@ -1,5 +1,5 @@
 ## what
-- Update workflows (`.github/workflows/`) to use `cloudposse-github-actions` org workflows 
+- Update workflows (`.github/workflows/`) to use `itisopen-gh-actions` org workflows 
 
 ## why
-- Part of migration GHA to `cloudposse-github-actions` org
+- Part of migration GHA to `itisopen-gh-actions` org

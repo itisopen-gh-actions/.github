@@ -11,5 +11,5 @@ permissions:
   
 jobs:
   perform:
-    uses: cloudposse-github-actions/.github/.github/workflows/shared-release-branches.yml@main
+    uses: itisopen-gh-actions/.github/.github/workflows/shared-release-branches.yml@itisopen
     secrets: inherit

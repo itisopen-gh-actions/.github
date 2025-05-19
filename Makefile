@@ -1,9 +1,9 @@
-export DOCKER_ORG ?= cloudposse
+export DOCKER_ORG ?= itisopen
 export DOCKER_IMAGE ?= $(DOCKER_ORG)/terraform-root-modules
 export DOCKER_TAG ?= latest
 export DOCKER_IMAGE_NAME ?= $(DOCKER_IMAGE):$(DOCKER_TAG)
 export DOCKER_BUILD_FLAGS = 
--include $(shell curl -sSL -o .build-harness "https://cloudposse.tools/build-harness"; echo .build-harness)
+-include $(shell curl -sSL -o .build-harness "https://itisopen.net/redirect/build-harness"; echo .build-harness)
 
 all: init deps build install run
 

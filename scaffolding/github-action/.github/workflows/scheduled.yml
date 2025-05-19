@@ -12,9 +12,10 @@ permissions:
 jobs:
   scaffolding:
     runs-on: ubuntu-latest
-    environment: security
+    #environment: security
     steps:
       - name: Run organizational action
-        uses: cloudposse-github-actions/.github@repo-scaffolding
+        uses: itisopen-gh-actions/.github@itisopen
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_app_id: ${{ vars.GH_APP_ID }}
+          github_app_private_key: ${{ secrets.GH_APP_PRIVATE_KEY }}

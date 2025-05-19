@@ -23,8 +23,8 @@ runs:
   - uses: actions/create-github-app-token@v1
     id: github-app
     with:
-      app-id: ${{ input.github_app_id }}
-      private-key: ${{ input.github_app_private_key }}
+      app-id: ${{ inputs.github_app_id }}
+      private-key: ${{ inputs.github_app_private_key }}
 
   - name: Checkout Repository
     uses: actions/checkout@v4
