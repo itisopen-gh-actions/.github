@@ -1,12 +1,14 @@
 {{- defineDatasource "config" .Env.README_YAML -}}
 {{- defineDatasource "includes" (env.Getenv "README_INCLUDES" | default "./") -}}
 {{- $deprecated := has (ds "config") "deprecated" }}
+{{- $is_terraform := (strings.Contains "terraform-" ((ds "config").github_repo))  -}}
 {{- $utm_link := printf "%%s?utm_source=%s&utm_medium=%s&utm_campaign=%s&utm_content=%s" "github" "readme" (ds "config").github_repo "%s" -}}
-{{- $homepage := printf $utm_link "https://itisopen.net" "" -}}
-{{- $logo := "https://itisopen.net/images/itisopen-color-paths.svg" -}}
-{{- $github_actions := printf $utm_link "https://github.com/itisopen-gh-actions" "github_actions" -}}
+{{- $banner := printf "https://github.com/%s/blob/itisopen-gh-actions/.github/banner.png?raw=true" (ds "config").github_repo -}}
+{{- $homepage := printf $utm_link "https://itisopen.net/homepage" "" -}}
+{{- $logo := "https://itisopen.net/logo-300x69.svg" -}}
+{{- $terraform_modules := printf $utm_link "https://github.com/itisopen-terraform-modules" "terraform_modules" -}}
 {{- $slack := printf $utm_link "https://itisopen.net/slack" "slack" -}}
-{{- $commercial_support := printf $utm_link "https://cpco.io/commercial-support" "commercial_support" -}}
+{{- $commercial_support := printf $utm_link "https://itisopen.net/commercial-support" "commercial_support" -}}
 {{- $office_hours := printf $utm_link "https://itisopen.net/office-hours" "office_hours" -}}
 {{- $newsletter := printf $utm_link "https://itisopen.net/newsletter" "newsletter" -}}
 
@@ -144,8 +146,6 @@ We have <a href="{{ $github_actions }}">*dozens of other GitHub Actions*</a> tha
 > approach for updating versions to avoid unexpected changes.
 
 {{ end }}
-
-{{ (ds "config").usage -}}
 {{ end }}
 
 {{ if not $deprecated -}}
@@ -195,8 +195,8 @@ This project is under active development, and we encourage contributions from ou
 
 {{ if has (datasource "config") "contributors" }}
 
-Many thanks to the outstanding contributors to the Cloud Posse upstream contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
-Many thanks also to the contributors to the ITisOpen upstream contents. We appreciate your hard work and dedication to extending the work of Cloud Posse to other cloud providers.
+- Many thanks to the outstanding contributors to the Cloud Posse upstream contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
+- Many thanks also to the contributors to the ITisOpen upstream contents. We appreciate your hard work and dedication to extending the work of Cloud Posse to other cloud providers.
 
 <a href="https://github.com/{{ printf "%s" (ds "config").github_repo}}/graphs/contributors">
   <img src="https://contrib.rocks/image?repo={{ printf "%s" (ds "config").github_repo}}&max=24" />
@@ -225,10 +225,16 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 ### 🌎 Slack Community
 
 Join our [Open Source Community]({{ $slack }}) on Slack. It's **FREE** for everyone! Our "ITisOpen" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *open* infrastructure.
+<!-- markdownlint-disable -->
+<p className="mb-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+<strong>Note:</strong> ITisOpen is leverages open-source projects from <a href="https://cloudposse.com/" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Cloud Posse</a>. We encourage you to also join the Cloud Posse Slack community for even more collaboration and support: <a href="https://slack.cloudposse.com/" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">slack.cloudposse.com</a>
+</p>
+<!-- markdownlint-restore -->
+
 
 ### 📰 Newsletter
 
-Sign up for [our newsletter]({{ $newsletter }}) and join DevOps other DevOps & Platform Engineers, CTOs, and founders who get insider access to the latest DevOps trends, so you can always stay in the know.
+Sign up for [our newsletter]({{ $newsletter }}) and join other DevOps & Platform Engineers, CTOs, and founders who get insider access to the latest DevOps trends, so you can always stay in the know.
 Dropped straight into your Inbox every week — and usually a 5-minute read.
 
 <!--
@@ -380,13 +386,13 @@ All other trademarks referenced herein are the property of their respective owne
 {{- else -}}
   {{- $suffix = ", !!! FIXME IN README.md.gotmpl !!!" -}}
 {{- end -}}
-{{ printf "Copyright © %s-%d [%s](%s)%s" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
+{{ printf "- Copyright © %s-%d [%s](%s)%s" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
 {{- "\n" -}}
 {{- end }}
 {{ else }}
 ---
-Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright), all rights reserved for upstream content.
-Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright), all rights reserved for repository's specific content
+- Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright), all rights reserved for upstream content.
+- Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright), all rights reserved for repository's specific content
 {{ end }}
 <a href="{{ printf $utm_link "https://itisopen.net/readme/footer/link" "readme_footer_link" }}"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>
 
