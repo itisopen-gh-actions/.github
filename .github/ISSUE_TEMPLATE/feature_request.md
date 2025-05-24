@@ -7,13 +7,13 @@ assignees: ''
 
 ---
 
-Have a question? Please checkout our [Slack Community](https://slack.itisopen.net) or visit our [Slack Archive](https://archive.itisopen.net/). 
+Have a question? Please checkout our [Slack Community](https://itisopen.net/slack) or visit our [Slack Archive](https://archive.itisopen.net/).
 
-[![Slack Community](https://slack.itisopen.net/badge.svg)](https://slack.itisopen.net)
+[![Slack Community](https://slack.itisopen.net/for-the-badge.svg)](https://itisopen.net/slack)
 
 ## Describe the Feature
 
-A clear and concise description of what the bug is. 
+A clear and concise description of what the bug is.
 
 ## Expected Behavior
 

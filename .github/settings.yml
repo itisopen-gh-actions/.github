@@ -20,7 +20,7 @@ repository:
   has_downloads: true
 
   # Updates the default branch for this repository.
-  default_branch: main
+  default_branch: itisopen
 
   # Either `true` to allow squash-merging pull requests, or `false` to prevent
   # squash-merging.
@@ -52,7 +52,7 @@ environments:
   - name: release
     deployment_branch_policy:
       custom_branches:
-        - main
+        - itisopen
         - release/**
         - name: "*.*.*"
           type: tag
@@ -61,8 +61,12 @@ environments:
   - name: security
     deployment_branch_policy:
       custom_branches:
-        - main
+        - itisopen
         - release/**
+  - name: terratest
+    deployment_branch_policy:
+      custom_branches:
+        - itisopen
 
 # Labels: define labels for Issues and Pull Requests
 labels:
@@ -151,9 +155,16 @@ labels:
 #
 # See https://docs.github.com/en/rest/reference/teams#add-or-update-team-repository-permissions for available options
 teams:
+  - name: approvers
+    permission: push
   - name: admins
     permission: admin
+  - name: bots
+    permission: admin
   - name: engineering
-    permission: push
+    permission: write
   - name: contributors
-    permission: push
+    permission: write
+  - name: security
+    permission: pull
+

@@ -3,7 +3,7 @@
 <!-- markdownlint-disable -->
 <a href="https://itisopen.net/homepage"><img src="https://github.com/itisopen-gh-actions/.github/blob/itisopen/.github/banner.png?raw=true" alt="Project Banner"/></a><br/>
     <p align="right">
-<a href="https://github.com/itisopen-gh-actions/.github/commits/itisopen/"><img src="https://img.shields.io/github/last-commit/itisopen-gh-actions/.github/itisopen?style=for-the-badge" alt="Last Update"/></a><a href="https://slack.itisopen.net"><img src="https://slack.itisopen.net/for-the-badge.svg" alt="Slack Community"/></a></p>
+<a href="https://github.com/itisopen-gh-actions/.github/commits/itisopen/"><img src="https://img.shields.io/github/last-commit/itisopen-gh-actions/.github/itisopen?style=for-the-badge" alt="Last Update"/></a><a href="https://itisopen.net/slack"><img src="https://slack.itisopen.net/for-the-badge.svg" alt="Slack Community"/></a></p>
 <!-- markdownlint-restore -->
 
 <!--
@@ -35,14 +35,13 @@ This repository fulfills several unique functions functions for the ITisOpen Git
     - **[`SECURITY.md`](SECURITY.md)** - our security policy and how to report vulnerabilities
     - **[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)** - our code of conduct covering our community and projects
     - **[`SUPPORT.md`](SUPPORT.md)** - where to get support for our projects
-2. It can also act as a source for defaults of some repo-level files that might be found in a new GitHub repo's `.github` folder. 
-   In the event that a new repo is initialized without these files, the repo will behave on github.com as if the default copies of these files were present in the repo. 
+2. It can also act as a source for defaults of some repo-level files that might be found in a new GitHub repo's `.github` folder.
+   In the event that a new repo is initialized without these files, the repo will behave on github.com as if the default copies of these files were present in the repo.
    These files include:
     - **[`.github/CODEOWNERS`](.github/CODEOWNERS)** - governs required approvals for pull requests
     - **[`FUNDING.yml`](FUNDING.yml)** - how to support the project financially
     - **[`.github/ISSUE_TEMPLATE/*`](.github/ISSUE_TEMPLATE/)** - issue templates for the project
     - **[`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)** - pull request template for the project
-
 
 
 
@@ -64,8 +63,8 @@ This project is under active development, and we encourage contributions from ou
 
 
 
-Many thanks to the outstanding contributors to the Cloud Posse upstream contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
-Many thanks also to the contributors to the ITisOpen upstream contents. We appreciate your hard work and dedication to extending the work of Cloud Posse to other cloud providers.
+- Many thanks to the outstanding contributors to the Cloud Posse upstream contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
+- Many thanks also to the contributors to the ITisOpen upstream contents. We appreciate your hard work and dedication to extending the work of Cloud Posse to other cloud providers.
 
 <a href="https://github.com/itisopen-gh-actions/.github/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=itisopen-gh-actions/.github&max=24" />
@@ -86,6 +85,12 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 ### 🌎 Slack Community
 
 Join our [Open Source Community](https://itisopen.net/slack?utm_source=github&utm_medium=readme&utm_campaign=itisopen-gh-actions/.github&utm_content=slack) on Slack. It's **FREE** for everyone! Our "ITisOpen" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *open* infrastructure.
+<!-- markdownlint-disable -->
+<p className="mb-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+<strong>Note:</strong> ITisOpen is leverages open-source projects from <a href="https://cloudposse.com/" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Cloud Posse</a>. We encourage you to also join the Cloud Posse Slack community for even more collaboration and support: <a href="https://slack.cloudposse.com/" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">slack.cloudposse.com</a>
+</p>
+<!-- markdownlint-restore -->
+
 
 ### 📰 Newsletter
 
@@ -136,8 +141,8 @@ All other trademarks referenced herein are the property of their respective owne
 
 ## Copyrights
 
-Copyright © 2022-2025 [Cloud Posse, LLC](https://cloudposse.com), all rights reserved for upstream content
-Copyright © 2025-2025 [ITisOpen](https://itisopen.net), all rights reserved for repository-specific content
+- Copyright © 2022-2025 [Cloud Posse, LLC](https://cloudposse.com), all rights reserved for upstream content
+- Copyright © 2025-2025 [ITisOpen](https://itisopen.net), all rights reserved for repository-specific content
 
 
 <a href="https://itisopen.net/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=itisopen-gh-actions/.github&utm_content=readme_footer_link"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>

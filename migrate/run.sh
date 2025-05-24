@@ -55,7 +55,7 @@ if [ ! -d "${MIGRATE_PATH}/tmp/build-harness" ]; then
     git clone https://github.com/itisopen/build-harness.git "$(dirname ${curdir})/build-harness"
     cd "$(dirname ${curdir})/build-harness"
     git checkout -b itisopen origin/itisopen
-    cd ..
+	cd -
 fi
 
 # Load all the helper functions

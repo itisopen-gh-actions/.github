@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-Found a bug? Maybe our [Slack Community](https://slack.itisopen.net) can help. 
+Found a bug? Maybe our [Slack Community](https://itisopen.net/slack) can help.
 
-[![Slack Community](https://slack.itisopen.net/badge.svg)](https://slack.itisopen.net)
+[![Slack Community](https://slack.itisopen.net/for-the-badge.svg)](https://itisopen.net/slack)
 
 ## Describe the Bug
 A clear and concise description of what the bug is.

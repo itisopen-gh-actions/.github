@@ -133,7 +133,7 @@ These sessions may be recorded, published and shared.
 
 We support a lot of Open Source projects. These projects abide by this Code of Conduct.
 
-- [https://github.com/itisopen](https://github.com/itisopen)
+- [https://github.com/itisopen-gh-actions](https://github.com/itisopen-gh-actions)
     
 
 ## Contact

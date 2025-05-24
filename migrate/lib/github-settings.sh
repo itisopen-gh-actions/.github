@@ -38,3 +38,13 @@ function install_github_settings() {
     
     git add $settings
 }
+
+function refresh_github_settings() {
+    info "Touch GitHub settings"
+    local settings=".github/settings.yml"
+
+    mkdir -p $(dirname $settings)
+    touch $settings
+		## Trigger settings update
+    echo "" >> .github/settings.yml
+}
