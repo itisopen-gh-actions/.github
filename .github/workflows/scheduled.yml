@@ -15,6 +15,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check if secret is set
+        run: |
+          if [ -z "${{ vars.GH_APP_ID }}" ]; then
+            echo "vars.GH_APP_ID is not set"
+          else
+            echo "vars.GH_APP_ID is set"
+          fi
+          if [ -z "${{ secrets.GH_APP_PRIVATE_KEY }}" ]; then
+            echo "secrets.GH_APP_PRIVATE_KEY is not set"
+          else
+            echo "secrets.GH_APP_PRIVATE_KEY is set"
+          fi
       - name: Print all environment variables
         run: env
   readme:
