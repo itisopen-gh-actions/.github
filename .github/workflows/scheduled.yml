@@ -11,6 +11,12 @@ permissions:
   contents: read
 
 jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print all environment variables
+        run: env
   readme:
     uses: itisopen-gh-actions/.github/.github/workflows/shared-readme.yml@itisopen
     name: "readme"
